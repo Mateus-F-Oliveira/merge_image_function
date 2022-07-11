@@ -19,7 +19,7 @@ class MergeImage
     int? resizeWidthImageBack
   }) async
   {
-    String? pictures;
+    String pictures = "";
     try
     {
       final decodedImageFront = image.decodeImage(imageFront);
@@ -33,6 +33,6 @@ class MergeImage
     {
       debugPrint(error.toString());
     }
-    return pictures!;
+    return pictures;
   }
 }
